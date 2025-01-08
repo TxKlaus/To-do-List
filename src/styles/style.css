@@ -108,5 +108,15 @@ body{
     color: #6c9bbc;
 }
 .hidden{
-    display: none;
+    display: none !important;
+}
+
+.task .progress.done + .task-description{
+    text-decoration: line-through;
+    color: #e5f9ffa7;
+}
+@media screen and(max-width: 600px){
+    #to_do{
+        width: 300px;
+    }
 }
